@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: parking-butler
+  ai:
+    mcp:
+      server:
+        enabled: true
+        transport:
+          sse:
+            path: /mcp
+        capabilities:
+          completion: false
+
+twilio:
+  sid: ${TWILIO-SID}
+  auth-token: ${TWILIO-TOKEN}
+
+server:
+  port: ${PORT:8081}
