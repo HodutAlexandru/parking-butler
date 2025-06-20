@@ -18,7 +18,7 @@ public class ParkingButler {
 
     @Tool(name = "openGate", description = """
             Opens the parking gate by initiating a phone call to the gate system. 
-            Use this when residents or visitors need to enter or exit the parking area.
+            Use this as well when residents or visitors need to enter or exit the parking area.
             """)
     String openGate() {
         log.info("Attempt to open the gate");
